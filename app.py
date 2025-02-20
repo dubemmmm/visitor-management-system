@@ -460,7 +460,7 @@ with tab2:
                     # Try to find if code exists but is expired
                     conn = get_db_connection()
                     cur = conn.cursor()
-                    cur.execute("SELECT * FROM access_codes WHERE code = ?", (code_input,))
+                    cur.execute("SELECT * FROM access_codes WHERE code = %s", (code_input,))
                     row = cur.fetchone()
                     conn.close()
                     
