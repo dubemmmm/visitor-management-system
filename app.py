@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables
-load_dotenv()
-
+if os.getenv("RENDER") is None: # RENDER is an automatic env var in Render
+    load_dotenv()
 # App name
 APP_NAME = "SecureVisit"
 
