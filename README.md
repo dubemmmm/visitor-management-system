@@ -50,6 +50,6 @@ This system was developed for **Rotawn Energy & Logistics** to streamline visito
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/securevisit.git
+git clone https://github.com/dubemmmm/visitor-management-system.git
 cd securevisit
 
